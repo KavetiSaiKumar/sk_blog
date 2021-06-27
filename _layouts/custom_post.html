@@ -1,0 +1,50 @@
+---
+layout: null
+---
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <title>About-Sai Kumar</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+	<meta name="generator" content="Jekyll v4.2.0" />
+	<meta property="og:locale" content="en_US" />
+	<meta name="description" content="Kaveti Sai Kumar’s website. I’m a Data Engineer, Software Engineer and amateur sculptor." />
+	<meta property="og:description" content="Kaveti Sai Kumar’s website. I’m a Data Engineer, Software Engineer and amateur sculptor." />
+	<link rel="canonical" href="/" />
+	<meta property="og:url" content="/" />
+	<meta name="twitter:card" content="summary" />
+	<script type="application/ld+json">
+	{"@type":"WebSite","description":"Kaveti Sai Kumar’s website. I’m a Data Engineer, Software Engineer and amateur sculptor.","url":"/","@context":"https://schema.org"}</script>
+	<!-- End Jekyll SEO tag -->
+	<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">	
+</head>
+
+<body>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
+</body>
