@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+	<meta name="generator" content="Jekyll v4.2.0" />
+	<meta property="og:locale" content="en_US" />
+	<meta name="description" content="Kaveti Sai Kumar’s website. I’m a Data Engineer, Software Engineer and amateur sculptor." />
+	<meta property="og:description" content="Kaveti Sai Kumar’s website. I’m a Data Engineer, Software Engineer and amateur sculptor." />
+	<link rel="canonical" href="/" />
+	<meta property="og:url" content="/" />
+	<meta name="twitter:card" content="summary" />
+	<script type="application/ld+json">
+	{"@type":"WebSite","description":"Kaveti Sai Kumar’s website. I’m a Data Engineer, Software Engineer and amateur sculptor.","url":"/","@context":"https://schema.org"}</script>
+	<!-- End Jekyll SEO tag -->
+	<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+</head><body><nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <ul id="menu">
+      <a href="/about/"><li>About</li></a>
+      <a href="https://github.com/saikumar-solowarrior?tab=repositories""><li>Projects</li></a>
+      <a href="/skills/"><li>Skills</li></a>
+    </ul>
+  </div>
+</nav>
+
+
+<header class="site-header" role="banner">
+  <div class="wrapper">
+	<nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav>
+ 
+	  <nav class="site-nav-1">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <div class="trigger"><a class="page-link" href="https://github.com/saikumar-solowarrior?tab=repositories">Projects</a></div>
+      </nav>
+	  
+	  	  <nav class="site-nav-2">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <div class="trigger"><a class="page-link" href="/skills/">Skills</a></div>
+      </nav>
+	  </div>
+</header>
+
+<main class="page-content" aria-label="Content">
+  <p id="typewriter">
+Hi, there! I'm <strong>Kumar.</strong>
+<br />
+<br />
+Software Engineer with <strong>passion in artificial intelligence.</strong>
+<br />
+<br />
+I love to <i>code, read through data and try to learn and develop machine learning concepts.</i> 
+</p>
+<script>
+function setupTypewriter(t) {
+  var HTML = t.innerHTML;
+
+  t.innerHTML = "";
+
+  var cursorPosition = 0,
+      tag = "",
+      writingTag = false,
+      tagOpen = false,
+      typeSpeed = 100,
+    tempTypeSpeed = 0;
+
+  var type = function() {
+    
+      if (writingTag === true) {
+          tag += HTML[cursorPosition];
+      }
+
+      if (HTML[cursorPosition] === "<") {
+          tempTypeSpeed = 0;
+          if (tagOpen) {
+              tagOpen = false;
+              writingTag = true;
+          } else {
+              tag = "";
+              tagOpen = true;
+              writingTag = true;
+              tag += HTML[cursorPosition];
+          }
+      }
+      if (!writingTag && tagOpen) {
+          tag.innerHTML += HTML[cursorPosition];
+      }
+      if (!writingTag && !tagOpen) {
+          if (HTML[cursorPosition] === " ") {
+              tempTypeSpeed = 0;
+          }
+          else {
+              tempTypeSpeed = (Math.random() * typeSpeed) + 40;
+          }
+          t.innerHTML += HTML[cursorPosition];
+      }
+      if (writingTag === true && HTML[cursorPosition] === ">") {
+          tempTypeSpeed = (Math.random() * typeSpeed) + 40;
+          writingTag = false;
+          if (tagOpen) {
+              var newSpan = document.createElement("span");
+              t.appendChild(newSpan);
+              newSpan.innerHTML = tag;
+              tag = newSpan.firstChild;
+          }
+      }
+
+      cursorPosition += 1;
+      if (cursorPosition < HTML.length - 1) {
+          setTimeout(type, tempTypeSpeed);
+      }
+
+  };
+
+  return {
+      type: type
+  };
+}
+
+var typer = document.getElementById('typewriter');
+
+typewriter = setupTypewriter(typewriter);
+
+typewriter.type();
+</script>
+</main><!--
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Welcome to Projects page!</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-06-02T21:14:42+05:30" itemprop="datePublished">Jun 2, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+  </div><a class="u-url" href="/projects/" hidden></a>
+</article>
+
+      </div>
+    </main>
+-->
+<!-- <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading"></h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"></li><li><a class="u-email" href="mailto:kavetisaik@gmail.com">kavetisaik@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/saikumar-solowarrior"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">saikumar-solowarrior</span></a></li><li><a href="https://www.twitter.com/kaveti0"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">kaveti0</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Kaveti Sai Kumar&#39;s website. I&#39;m a Data Engineer, Software Engineer and amateur sculptor.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+ --></body>
+
+</html>
