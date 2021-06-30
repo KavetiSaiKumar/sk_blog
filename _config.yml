@@ -21,7 +21,7 @@
 title: 
 email: kavetisaik@gmail.com
 description: Kaveti Sai Kumar's website. I'm a Data Engineer, Software Engineer and amateur sculptor.
-baseurl: "my_blog" # the subpath of your site, e.g. /blog
+baseurl: "sk_blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kaveti0
 github_username:  saikumar-solowarrior
