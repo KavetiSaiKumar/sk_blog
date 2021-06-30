@@ -230,13 +230,15 @@ table td { border: 1px solid #e8e8e8; }
 /** Posts */
 .post-header { margin-bottom: 30px; padding-left: 15em; padding-right: 15em; }
 
+@media screen and (min-width: 0px) and (max-width: 600px) { .post-header { padding-left: 3em; padding-right: 3em; } }
+
 .post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; padding-top: 30px; }
 
 @media screen and (max-width: 800px) { .post-title { font-size: 36px; padding-top: 30px; } }
 
 .post-content { margin-bottom: 30px; padding-left: 15em; padding-right: 15em; }
 
-@media screen and (min-width: 0px) and (max-width: 600px) { .post-content { padding-left: 5em; padding-right: 5em; } }
+@media screen and (min-width: 0px) and (max-width: 600px) { .post-content { padding-left: 3em; padding-right: 3em; } }
 
 .post-content h2 { font-size: 32px; }
 
