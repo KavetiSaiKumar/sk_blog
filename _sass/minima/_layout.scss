@@ -537,6 +537,11 @@
   margin-bottom: $spacing-unit;
   padding-left: 15em;
   padding-right: 15em;
+
+  @media screen and (min-width: 0px) and (max-width: 600px) {
+    padding-left:3em;
+    padding-right:5em; 
+  }
 }
 
 .post-title {
